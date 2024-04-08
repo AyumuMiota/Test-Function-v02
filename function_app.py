@@ -25,9 +25,9 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
     name = get_name(req)
     if name:
         return func.HttpResponse(
-            f"Hello, {name}. This HTTP triggered function function executed successfully at {timestamp}.")
+            f"Hello, {name}. This HTTP triggered function executed successfully at {timestamp}.")
     else:
         return func.HttpResponse(
-            f"This HTTP triggered function function executed successfully at {timestamp}. Pass a name in the query string or in the request body for a personalized response.",
+            f"This HTTP triggered function executed successfully at {timestamp}. Pass a name in the query string or in the request body for a personalized response.",
             status_code=200
         )
